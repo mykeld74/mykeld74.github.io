@@ -66,6 +66,7 @@ header {
     min-height: 540px;
     background-image: url(../img/caution_switch-off.png);
     background-size: contain;
+    background-repeat: no-repeat;
     #msSwitchOverlay {
         width: 100%;
         height: 540px;
@@ -103,7 +104,15 @@ form {
         margin-bottom: 20px;
     }
 }
-
+.register-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register-button{
+    width: 200px;
+}
 footer {
     min-height: 80px;
     margin-top: 40px;
