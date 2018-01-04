@@ -96,23 +96,46 @@ form {
         /* Firefox 18- */
         color: #777777;
     }
-    input{
+    input {
         color: $black;
     }
-    .response{
+    .response {
         font-size: 1.3em;
         margin-bottom: 20px;
     }
 }
-.register-container{
+
+.register-container {
     margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.register-button{
+
+.register-button {
     width: 200px;
+    height: 95px;
+    background: transparent url(../img/monsterswitch-m-oval-bg.png) no-repeat center center;
+    background-size: cover;
+    color: $black;
+    text-align: center;
+    font-size: 1.6em;
+    padding-top: 1em;
+    transition: all .3s;
 }
+.register-button:hover{
+    color: $secondary-color;
+}
+.register-button:hover,
+.register-button:visited,
+.register-button:active,
+.register-button:focus {
+    outline: none;
+}
+.register-button:visited{
+    color: $black;
+}
+
 footer {
     min-height: 80px;
     margin-top: 40px;
