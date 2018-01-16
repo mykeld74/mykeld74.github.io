@@ -119,7 +119,7 @@ form {
     width: 200px;
     height: 95px;
     background: transparent url(../img/monsterswitch-m-oval-bg.png) no-repeat center center;
-    background-size: cover;
+    background-size: contain;
     color: $white;
     text-align: center;
     font-size: 1.6em;
