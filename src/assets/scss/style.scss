@@ -60,7 +60,7 @@ header {
     padding-top: 30px;
     padding-bottom: 30px;
     margin-bottom: 40px;
-    background-color: #cccccc;
+    background-color: #dedede;
     border-bottom: 40px solid $primary-color;
 }
 
@@ -160,5 +160,6 @@ footer {
     }
     .register-container{
         padding-bottom: 10px;
+        float: none;
     }
 }
