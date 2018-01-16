@@ -47,7 +47,8 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 body {
-    background-color: #dedede;
+    background-color: #333333;
+    color: #ffffff;
 }
 
 .container {
@@ -59,7 +60,8 @@ header {
     padding-top: 30px;
     padding-bottom: 30px;
     margin-bottom: 40px;
-    background-color: #efefef;
+    background-color: #cccccc;
+    border-bottom: 40px solid $primary-color;
 }
 
 #msSwitch {
@@ -106,10 +108,11 @@ form {
 }
 
 .register-container {
-    margin-top: 20px;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    float: right;
 }
 
 .register-button {
@@ -117,27 +120,45 @@ form {
     height: 95px;
     background: transparent url(../img/monsterswitch-m-oval-bg.png) no-repeat center center;
     background-size: cover;
-    color: $black;
+    color: $white;
     text-align: center;
     font-size: 1.6em;
     padding-top: 1em;
     transition: all .3s;
 }
-.register-button:hover{
+
+.register-button:hover {
     color: $secondary-color;
 }
+
 .register-button:hover,
 .register-button:visited,
 .register-button:active,
 .register-button:focus {
     outline: none;
 }
-.register-button:visited{
-    color: $black;
+
+.register-button:visited {
+    color: $white;
 }
 
 footer {
     min-height: 80px;
     margin-top: 40px;
     background-color: $primary-color;
+}
+
+.main-text {
+    padding: 0 20px;
+}
+
+@media(max-width: 468px) {
+    .main-text {
+        h1, h3 {
+            padding-bottom: 10px;
+        }
+    }
+    .register-container{
+        padding-bottom: 10px;
+    }
 }
