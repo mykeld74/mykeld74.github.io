@@ -80,6 +80,9 @@ header {
         top: 108px;
     }
 }
+.center-text{
+    text-align: center;
+}
 .swap{
     margin-top: 50px;
 }
@@ -169,14 +172,15 @@ footer {
     margin-top: 40px;
     background-color: $primary-color;
 }
-
+.larger {
+    font-size: 3.6rem;
+}
 .main-text {
     padding: 0;
-    .smaller {
-        font-size: 2.5rem;
-    }
+    padding-top: 40px;
+
     h3 {
-        padding-top: 20px;
+        padding-top: 60px;
     }
 }
 
