@@ -88,7 +88,7 @@ header {
 }
 #msSwitch {
     min-height: 540px;
-    background-image: url(../img/caution_switch-off.png);
+    background-image: url(../img/two-switches.png);
     background-size: contain;
     background-repeat: no-repeat;
     #msSwitchOverlay {
@@ -134,7 +134,7 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-    float: right;
+    // float: right;
 }
 
 .register-button {
@@ -185,6 +185,7 @@ footer {
 }
 
 @media(max-width: 468px) {
+
     .main-text {
         h1,
         h3 {
@@ -194,5 +195,26 @@ footer {
     .register-container {
         padding-bottom: 10px;
         float: none;
+    }
+    .larger{
+        font-size: 2.6rem;
+    }
+    header{
+        min-height: 380px;
+    }
+    .monstertext-container{
+        position: relative;
+        .logo-text{
+            position: absolute;
+            top: 10px;
+        }
+    }
+    .monster-container {
+        position: relative;
+        .logo {
+            position: absolute;
+            max-width: 100%;
+            top: 78px;
+        }
     }
 }
