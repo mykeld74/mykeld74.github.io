@@ -57,13 +57,32 @@ body {
 }
 
 header {
-    padding-top: 30px;
+    padding-top: 10px;
     padding-bottom: 30px;
     margin-bottom: 40px;
+    min-height: 340px;
     background-color: #dedede;
-    border-bottom: 40px solid $primary-color;
+    border-bottom: 20px solid $primary-color;
 }
 
+.monster-container {
+    position: relative;
+    .logo {
+        position: absolute;
+        max-width: 98%;
+        top: 39px;
+    }
+}
+.monstertext-container{
+    position: relative;
+    .logo-text{
+        position: absolute;
+        top: 108px;
+    }
+}
+.swap{
+    margin-top: 50px;
+}
 #msSwitch {
     min-height: 540px;
     background-image: url(../img/caution_switch-off.png);
@@ -127,8 +146,15 @@ form {
     transition: all .3s;
 }
 
-.register-button:hover {
-    color: $secondary-color;
+.register-button:visited {
+    color: $white;
+}
+
+.register-button:hover,
+.register-button:focus {
+    background: transparent url(../img/monsterswitch-m-oval-bg-hover.png) no-repeat center center;
+    background-size: contain;
+    color: #000000;
 }
 
 .register-button:hover,
@@ -138,27 +164,30 @@ form {
     outline: none;
 }
 
-.register-button:visited {
-    color: $white;
-}
-
 footer {
-    min-height: 80px;
+    min-height: 20px;
     margin-top: 40px;
     background-color: $primary-color;
 }
 
 .main-text {
-    padding: 0 20px;
+    padding: 0;
+    .smaller {
+        font-size: 2.5rem;
+    }
+    h3 {
+        padding-top: 20px;
+    }
 }
 
 @media(max-width: 468px) {
     .main-text {
-        h1, h3 {
+        h1,
+        h3 {
             padding-bottom: 10px;
         }
     }
-    .register-container{
+    .register-container {
         padding-bottom: 10px;
         float: none;
     }
