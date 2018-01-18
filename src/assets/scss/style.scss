@@ -213,8 +213,14 @@ footer {
         position: relative;
         .logo {
             position: absolute;
-            max-width: 100%;
-            top: 78px;
+            max-width: 340px;
+            top: 89px;
+        }
+    }
+    #msSwitch{
+        min-height: 360px;
+        #msSwitchOverlay{
+            height: 360px;
         }
     }
 }
