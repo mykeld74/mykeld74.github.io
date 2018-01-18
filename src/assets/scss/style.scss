@@ -151,6 +151,8 @@ form {
 
 .register-button:visited {
     color: $white;
+    background: transparent url(../img/monsterswitch-m-oval-bg.png) no-repeat center center;
+    background-size: contain;
 }
 
 .register-button:hover,
